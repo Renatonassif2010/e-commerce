@@ -1,0 +1,33 @@
+.aside-shopping-cart {
+  z-index: 1000;
+  position: fixed;
+  top: 40%;
+  right: 6%;
+}
+
+.aside-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  position: relative;
+}
+
+#counterSpan {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  color: white;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}

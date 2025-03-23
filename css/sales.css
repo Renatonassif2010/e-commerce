@@ -4,7 +4,7 @@
   position: fixed;
   top: 50%;
   right: 0;
-  width: 200px;
+  width: auto;
   height: 200px;
   background-color: #000000c6;
   border-radius: 12px 0 0 12px;
@@ -12,9 +12,16 @@
   z-index: 1000;
 }
 .sales {
-  font-size: larger;
+  font-size: 20px;
   position: relative;
   text-align: center;
   text-decoration: underline;
   color: rgb(207, 108, 21);
+}
+@media (max-width: 768px) {
+  .aside-sales {
+    max-width: 150px;
+    max-height: 150px;
+    word-break: break-all;
+  }
 }

@@ -86,6 +86,7 @@
         data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasWithBothOptions"
         aria-controls="offcanvasWithBothOptions"
+        style="z-index: 1"
       >
         <i class="fa-solid fa-house"></i>
       </button>
@@ -154,7 +155,13 @@
       </div>
     </aside>
     <aside class="aside-sales">
-      <p class="sales">Duration sales <span id="time">24:00:00</span></p>
+      <p class="sales">Duration sales <br /><span id="time">24:00:00</span></p>
+    </aside>
+    <aside class="aside-shopping-cart" style="cursor: pointer">
+      <div class="aside-style">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="counterSpan">0</span>
+      </div>
     </aside>
     <main class="container">
       <h2 id="h2" class="text-center mt-5">Welcome to Nassif's E-commerce</h2>
@@ -169,46 +176,274 @@
           Daily sales
         </h3>
         <h4 class="mb-4 text-center">The most buy for people</h4>
-
-        <div class="card w-50 h-50 m-auto mb-5">
-          <div class="image">
-            <img
-              src="https://academy.bit2me.com/wp-content/uploads/2019/11/103_CPU.webp"
-              class="img-fluid"
-              alt="..."
-            />
-          </div>
-          <div class="infomations">
-            <p class="text-center w-100">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              <br />
-              <span><a href="#">learn more</a></span>
-            </p>
-            <span
-              class="w-100"
-              style="
-                color: orange;
-                display: flex;
-                justify-content: end;
-                padding-right: 5px;
-              "
-              >$90.00</span
-            >
-            <button class="btn btn-primary w-100">buy now</button>
+        <div
+          class="conteiner"
+          style="
+            max-width: 100%;
+            border-bottom: 1px solid rgb(149, 149, 149);
+            margin-bottom: 40px;
+          "
+        >
+          <div class="main-card card m-auto mb-5">
+            <div class="image">
+              <img
+                src="https://academy.bit2me.com/wp-content/uploads/2019/11/103_CPU.webp"
+                class="img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="infomations">
+              <p class="text-center w-100">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <br />
+                <span><a href="#">learn more</a></span>
+              </p>
+              <span
+                class="w-100"
+                style="
+                  color: orange;
+                  display: flex;
+                  justify-content: end;
+                  padding-right: 5px;
+                "
+                >$90.00</span
+              >
+              <button class="btn btn-primary w-100">
+                Adition in your shopping cart
+              </button>
+            </div>
           </div>
         </div>
 
-        <div class="container text-center">
+        <div class="container mb-5">
           <div class="row">
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-            <div class="col">Column</div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="image">
+                  <img
+                    src="https://academy.bit2me.com/wp-content/uploads/2019/11/103_CPU.webp"
+                    class="img-fluid"
+                    alt="..."
+                  />
+                </div>
+                <div class="infomations p-3">
+                  <p class="text-center w-100">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br />
+                    <span><a href="#">learn more</a></span>
+                  </p>
+                  <span class="w-100 d-flex justify-content-end text-warning">
+                    $90.00
+                  </span>
+                  <button class="btn btn-primary w-100 mt-2">
+                    Add to your shopping cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="image">
+                  <img
+                    src="https://academy.bit2me.com/wp-content/uploads/2019/11/103_CPU.webp"
+                    class="img-fluid"
+                    alt="..."
+                  />
+                </div>
+                <div class="infomations p-3">
+                  <p class="text-center w-100">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br />
+                    <span><a href="#">learn more</a></span>
+                  </p>
+                  <span class="w-100 d-flex justify-content-end text-warning">
+                    $90.00
+                  </span>
+                  <button class="btn btn-primary w-100 mt-2">
+                    Add to your shopping cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="image">
+                  <img
+                    src="https://academy.bit2me.com/wp-content/uploads/2019/11/103_CPU.webp"
+                    class="img-fluid"
+                    alt="..."
+                  />
+                </div>
+                <div class="infomations p-3">
+                  <p class="text-center w-100">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br />
+                    <span><a href="#">learn more</a></span>
+                  </p>
+                  <span class="w-100 d-flex justify-content-end text-warning">
+                    $90.00
+                  </span>
+                  <button class="btn btn-primary w-100 mt-2">
+                    Add to your shopping cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="image">
+                  <img
+                    src="https://academy.bit2me.com/wp-content/uploads/2019/11/103_CPU.webp"
+                    class="img-fluid"
+                    alt="..."
+                  />
+                </div>
+                <div class="infomations p-3">
+                  <p class="text-center w-100">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br />
+                    <span><a href="#">learn more</a></span>
+                  </p>
+                  <span class="w-100 d-flex justify-content-end text-warning">
+                    $90.00
+                  </span>
+                  <button class="btn btn-primary w-100 mt-2">
+                    Add to your shopping cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="image">
+                  <img
+                    src="https://academy.bit2me.com/wp-content/uploads/2019/11/103_CPU.webp"
+                    class="img-fluid"
+                    alt="..."
+                  />
+                </div>
+                <div class="infomations p-3">
+                  <p class="text-center w-100">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br />
+                    <span><a href="#">learn more</a></span>
+                  </p>
+                  <span class="w-100 d-flex justify-content-end text-warning">
+                    $90.00
+                  </span>
+                  <button class="btn btn-primary w-100 mt-2">
+                    Add to your shopping cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="image">
+                  <img
+                    src="https://academy.bit2me.com/wp-content/uploads/2019/11/103_CPU.webp"
+                    class="img-fluid"
+                    alt="..."
+                  />
+                </div>
+                <div class="infomations p-3">
+                  <p class="text-center w-100">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br />
+                    <span><a href="#">learn more</a></span>
+                  </p>
+                  <span class="w-100 d-flex justify-content-end text-warning">
+                    $90.00
+                  </span>
+                  <button class="btn btn-primary w-100 mt-2">
+                    Add to your shopping cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="image">
+                  <img
+                    src="https://academy.bit2me.com/wp-content/uploads/2019/11/103_CPU.webp"
+                    class="img-fluid"
+                    alt="..."
+                  />
+                </div>
+                <div class="infomations p-3">
+                  <p class="text-center w-100">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br />
+                    <span><a href="#">learn more</a></span>
+                  </p>
+                  <span class="w-100 d-flex justify-content-end text-warning">
+                    $90.00
+                  </span>
+                  <button class="btn btn-primary w-100 mt-2">
+                    Add to your shopping cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="image">
+                  <img
+                    src="https://academy.bit2me.com/wp-content/uploads/2019/11/103_CPU.webp"
+                    class="img-fluid"
+                    alt="..."
+                  />
+                </div>
+                <div class="infomations p-3">
+                  <p class="text-center w-100">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br />
+                    <span><a href="#">learn more</a></span>
+                  </p>
+                  <span class="w-100 d-flex justify-content-end text-warning">
+                    $90.00
+                  </span>
+                  <button class="btn btn-primary w-100 mt-2">
+                    Add to your shopping cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="image">
+                  <img
+                    src="https://academy.bit2me.com/wp-content/uploads/2019/11/103_CPU.webp"
+                    class="img-fluid"
+                    alt="..."
+                  />
+                </div>
+                <div class="infomations p-3">
+                  <p class="text-center w-100">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br />
+                    <span><a href="#">learn more</a></span>
+                  </p>
+                  <span class="w-100 d-flex justify-content-end text-warning">
+                    $90.00
+                  </span>
+                  <button class="btn btn-primary w-100 mt-2">
+                    Add to your shopping cart
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
+    <footer class="text-center bg-body-tertiary p-5">
+      <span style="text-decoration: underline"
+        >@copy; 2025 Nassif's E-commerce</span
+      >
+    </footer>
+    <script src="/js/additionProducts.js"></script>
+    <script src="/js/timer.js"></script>
     <script src="/js/animationH2.js"></script>
     <script src="js/theme.js"></script>
     <script

@@ -7,6 +7,7 @@ function animationH2() {
     "Quality in products!",
     "Good Service!",
     "The best company in the technology!",
+    "Welcome to Nassif's E-commerce",
   ];
   time = setInterval(function () {
     let number = Math.floor(Math.random() * arrayWords.length);

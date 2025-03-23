@@ -1,3 +1,21 @@
 #h2 {
   transition: 0.5s ease-in-out;
 }
+.main-card {
+  padding: 10px;
+  max-width: 400px;
+  max-height: auto;
+}
+.main-card img {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.card {
+  padding: 10px;
+  max-width: 300px;
+  max-height: auto;
+}
+.card img {
+  border: 1px solid black;
+  border-radius: 10px;
+}
