@@ -1,0 +1,20 @@
+.aside-sales {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background-color: #000000c6;
+  border-radius: 12px 0 0 12px;
+  padding: 10px;
+  z-index: 1000;
+}
+.sales {
+  font-size: larger;
+  position: relative;
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(207, 108, 21);
+}
