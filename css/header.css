@@ -1,0 +1,25 @@
+@media (min-width: 300px) and (max-width: 469px) {
+  header {
+    padding: 0px;
+    margin: 0;
+  }
+  .container-fluid {
+    padding: 60px;
+  }
+  .container-fluid .navbar-toggler {
+    position: absolute;
+    top: 5%;
+    right: 0;
+  }
+  header .navbar-brand {
+    display: none;
+  }
+}
+header h3 {
+  padding-left: 10px;
+}
+
+.container-fluid .navbar-toggler {
+  margin-right: 12px;
+} 
+
